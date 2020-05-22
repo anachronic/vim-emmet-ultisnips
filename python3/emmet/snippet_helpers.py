@@ -25,6 +25,7 @@ html_rendered_syntaxes = [
     "htmlH5",
     "htmlH6",
     "htmlHead",
+    "htmlFold",
 ]
 
 
@@ -41,5 +42,7 @@ def should_expand_emmet():
 
     return synstack == [] or (
         "htmlTag" not in synstack
+        and "javaScript" not in synstack
+        and "cssStyle" not in synstack
         and any(syntax in synstack for syntax in html_rendered_syntaxes)
     )
