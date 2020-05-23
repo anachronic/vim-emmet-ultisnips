@@ -26,6 +26,8 @@ html_rendered_syntaxes = [
     "htmlH6",
     "htmlHead",
     "htmlFold",
+    "jsParen",
+    "jsxElement",
 ]
 
 
